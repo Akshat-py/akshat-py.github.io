@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body {
+    background-image: linear-gradient(to right,green 30%,blue);
+
+}
+div.track {
+    width: 400px;
+    height: 550px;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.5);
+}
+div.car{
+    --left:0;
+    --right:0;
+    width: 50px;
+    height: 50px;
+    background:whitesmoke;
+    border-radius: 5px;
+    position: relative;
+    top: 500px;
+    left: 175px;
+    animation: carl 100ms linear;
+    animation-fill-mode: forwards;
+}
+.right{
+    animation: carr 100ms linear;
+    animation-fill-mode: forwards;
+}
+
+.block{
+    --delay:0;
+    --time:2;
+    position: relative;
+    object-position: center;
+    top:0px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 128, 128,0.5);
+    border: 1px solid gold;
+    border-radius: 5px;
+}
+.block.a{
+    --delay:0;
+    top: -50px;
+    left: 10px;
+    animation: fallA calc(var(--time)*1s) linear infinite calc(var(--delay)*1s);
+}
+.block.b{
+    --delay:0;
+    top: -100px;
+    left: 160px;
+    animation: fallB calc(var(--time)*1s) linear infinite calc(var(--delay)*1s);
+}
+.block.c{
+    --delay:0;
+    top: -150px;
+    left: 340px;
+    animation: fallC calc(var(--time)*1s) linear infinite calc(var(--delay)*1s);
+}
+@keyframes fallA{
+    0%{top: -50px;}
+    100%{top: 450px;}
+}
+@keyframes fallB{
+    0%{top: -100px;}
+    100%{top: 400px;}
+}
+@keyframes fallC{
+    0%{top: -150px;}
+    100%{top: 350px;}
+}
+@keyframes carl{
+    0%{position: relative;}
+    100%{transform: translateX(calc(var(--left)*-25px));}
+}

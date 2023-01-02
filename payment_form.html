@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        body{
+            background-color:gray;
+        }
+        #main {
+            color: greenyellow;
+            background-color: black;
+            align-items: center;
+            text-align: center;
+            margin-top: 150px;
+            border: 5px double gold;
+            padding: 5px;
+            margin-left: 460px;
+            margin-right: 470px;
+        }
+        #no_center{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="POST" id="main">
+        <h3>User details:</h3>
+        <label for="name">Name : </label>
+        <input type="text" name="name"><br><br>
+        <label for="email">Email : </label>
+        <input type="email" name="email"><br><br>
+    <fieldset id="no_center">
+        <legend>Gender</legend>
+        <input type="radio" value="Male" name="gender">Male<br>
+        <input type="radio" value="Female" name="gender">Female<br>
+        <input type="radio" value="Other" name="gender">Other<br>
+    </fieldset><br><br>
+    Password: <input type="password" name="pwd" id="pwd">
+    <br>
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

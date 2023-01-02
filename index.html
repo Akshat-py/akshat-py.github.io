@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only HTML | Home</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            background-color: cornflowerblue;
+        }
+        header {
+            background-color: orange;
+            margin-top: 0px;
+        }
+        header h1 {
+            margin:0px;
+            text-align: center;
+            font-size: 60px;
+            font-family: Berlin Sans FB;
+            padding: 40px;
+            color: white;
+        }
+        nav {
+            background-color: black;
+            height: 40px;
+        }
+        nav a {
+            color: cornsilk;
+            float: left;
+            font-size: 20px;
+            padding-top: 10px;
+            padding-left: 50px;
+            padding-right: 25px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: greenyellow;
+        }
+        marquee{
+            background-color: black;
+            height: 15px;
+            font-size: 14px;
+            color: greenyellow;
+            margin: 0;
+        }
+        section{
+            min-height: 160vh;
+            margin: 0;
+        }
+        section h2 {
+            padding: 25px;
+            margin:0;
+            font-size: 40px;
+            text-align: center;
+            color: darkgreen;
+        }
+        .mom, .music {
+            float: left;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+        .game, .old_index {
+            float: right;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+        #preview {
+            background-color: rgba(150, 150, 150, 0.5);
+        }
+        #files{
+            align-items: center;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        #files #links{
+            text-align: center;
+            border: 5px dashed gold;
+        }
+        #files a {
+            text-decoration: none;
+            color: darkred;
+        }
+        #files a:hover{
+            text-shadow: 0px 0px 7px greenyellow;
+        }
+        #media {
+            background-color: rgba(150, 150, 150, 0.5);
+            text-align: center;
+            min-height: 390px;
+        }
+        #media a {
+            text-decoration: none;
+            color: darkred;
+        }
+        #media a:hover{
+            text-shadow: 0px 0px 7px greenyellow;
+        }
+        #media div {
+            border: 5px greenyellow;
+            border-style: double;
+            margin-left: 30px;
+            margin-right: 30px;
+            padding: 15px;
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Home Page.</h1>
+    </header>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./index.html#files">Files</a>
+        <a href="./index.html#media">Media</a>
+        <a href="./old_index.html" target="_blank" rel="noopener noreferrer">Old Home page</a>
+        <a href="./about.html" target="_blank" rel="noopener noreferrer">About</a>
+       <!-- <a href="./about.html" target="_blank" rel="noopener noreferrer">About</a>
+        <a href="./old_index.html" target="_blank" rel="noopener noreferrer">Old Home page</a>
+        <a href="./index.html#media">Media</a>
+        <a href="./index.html#files">Files</a>
+        <a href="./index.html">Home</a> -->
+    </nav>
+    <main>
+        <marquee direction="left">**Please use the website on a PC.**</marquee>
+        <section id="preview">
+            <h2>Site Preview</h2>
+            <iframe src="./mom.html" frameborder="0" class="mom" width="560px" height="400px">Mom.html</iframe>
+            <iframe src="./dos/game.html" frameborder="0" class="game" width="560px" height="400px">Game.html</iframe>
+            <iframe src="./music.html" frameborder="0" class="music" width="560px" height="400px">Music.html</iframe>
+            <iframe src="./old_index.html" frameborder="0" class="old_index" width="560px" height="400px">Old_index.html</iframe>
+        </section>
+        <section id="files">
+            <h2>HTML Files</h2>
+            <div id="links">
+            <br>
+            <span style="font-size: 25px; font-family: Comic Sans MS;"> In ./ folder.</span>
+            <br><br>
+            <u><em><b>
+            <a href="./__puzzle&photos__.html">__puzzle&photos__.html</a><br><br>
+            <a href="./ak.html">ak.html</a><br><br>
+            <a href="./ak2.html">ak2.html</a><br><br>
+            <a href="./akshat1.html">akshat1.html</a><br><br>
+            <a href="./anish.html">anish.html</a><br><br>
+            <a href="./anu_1.html">anu_1.html</a><br><br>
+            <a href="./anu_2.html">anu_2.html</a><br><br>
+            <a href="./calculator.html">calculator.html</a><br><br>
+            <a href="./dic.a.html">dic.a.html</a><br><br>
+            <a href="./dic.intro.html">dic.intro.html</a><br><br>
+            <a href="./dic.intro2.html">dic.intro2.html</a><br><br>
+            <a href="./GlobalWarming.html">GlobalWarming.html</a><br><br>
+            <a href="./IntoGobalWarming.html">IntoGobalWarming.html</a><br><br>
+            <a href="./link_button.html">link_button.html</a><br><br>
+            <a href="./mom.html">mom.html</a><br><br>
+            <a href="./music.html">music.html</a><br><br>
+            <a href="./old_index.html">old_index.html</a><br><br>
+            <a href="./payment_form.html">payment_form.html</a><br><br>
+            </u></em></b>
+            <span style="font-size: 25px; font-family: Comic Sans MS;"> In ./dos folder.</span><br><br>
+            <u><em><b>
+            <a href="./dos/game.html">game.html</a><br><br>
+            <a href="./dos/index_dos.html">index_dos.html</a><br><br>
+            </u></em></b>
+            </div>
+        </section>
+        <section id="media">
+            <h2>Media</h2>
+            <div><u><em><strong>
+                <a href="./media/calculator/calculator_media_index.html">Calculator</a><br><br>
+                <a href="./media/dic/dic_media_index.html">Dic.</a><br><br>
+                <a href="./media/GlobalWarming/GlobaWarming_media_index.html">Global Warming</a><br><br>
+                <a href="./media/mom/mom_media_index.html">Mom</a><br><br>
+                <a href="./media/music/music_media_index.html">Music</a><br><br>
+                </strong></em></u>
+            </div>
+        </section>
+        <footer style="font-family:Baskerville Old Face; padding-left: 15px; background-color: black; color: goldenrod; font-size: 20px;">©2021-22 Akshat Shandilya </footer>
+    </main>
+</body>
+</html>
